@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1.0"
+        android:inputType="textShortMessage"
+        android:text="@string/Question"
+        android:textAllCaps="false"/>
+
+    <com.dd.processbutton.iml.SubmitProcessButton
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:minWidth="100dp"
+        android:text="@string/Send"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        custom:pb_textComplete="@string/Done"
+        custom:pb_textProgress="@string/Loading"
+        />
+
+</LinearLayout>
